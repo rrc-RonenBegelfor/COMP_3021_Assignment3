@@ -19,3 +19,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           exclude-paths: "node_modules/**"
+          status: action_required
