@@ -5,6 +5,7 @@ on:
     types: [opened, synchronize]
 jobs:
   scan:
+    name: Appscan
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
