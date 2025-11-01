@@ -4,6 +4,10 @@ on:
   push:
   pull_request:
     types: [opened, synchronize]
+permissions:
+  contents: read
+  pull-requests: write
+  checks: write
 jobs:
   scan:
     name: Appscan
@@ -19,4 +23,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           exclude-paths: "node_modules/**"
-          status: action_required
+          status: failure
