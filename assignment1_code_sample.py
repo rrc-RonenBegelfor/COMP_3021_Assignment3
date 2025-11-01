@@ -1,3 +1,5 @@
+"""This is used to test the yaml in a different branch for the creation of a pull request."""
+
 import os
 import pymysql # type: ignore
 from urllib.request import urlopen
