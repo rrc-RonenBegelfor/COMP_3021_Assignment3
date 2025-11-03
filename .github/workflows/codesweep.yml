@@ -13,6 +13,6 @@ jobs:
       - name: Run AppScan CodeSweep
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2.1
         with:
-          status: failure
+          status: action_required
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
